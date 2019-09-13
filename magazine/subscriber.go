@@ -5,13 +5,13 @@ type Subscriber struct {
 	Name    string
 	Rate    float64
 	Active  bool
-	Address Address
+	Address
 }
 
 type Employee struct {
 	Name    string
 	Salary  float64
-	Address Address
+	Address
 }
 
 type Address struct {
