@@ -5,16 +5,16 @@ import (
 )
 
 type Date struct {
-	Year  int
-	Month int
-	Day   int
+	year  int
+	month int
+	day   int
 }
 
 func (d *Date) SetYear(y int) error {
 	if y < 1 {
 		return errors.New("invalid year")
 	}
-	d.Year = y
+	d.year = y
 	return nil
 }
 
@@ -22,7 +22,7 @@ func (d *Date) SetMonth(m int) error {
 	if m < 1 || m > 12 {
 		return errors.New("invalid month")
 	}
-	d.Month = m
+	d.month = m
 	return nil
 }
 
@@ -30,6 +30,6 @@ func (d *Date) SetDay(a int) error {
 	if a < 1 || a > 31 {
 		return errors.New("invalid day")
 	}
-	d.Day = a
+	d.day = a
 	return nil
 }
