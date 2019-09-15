@@ -3,14 +3,13 @@ package gadget
 import "fmt"
 
 type TapePlayer struct {
-  Batteries string
+	Batteries string
 }
 
 func (tp *TapePlayer) Play(song string) {
-  fmt.Println("Playing", song)
+	fmt.Println("Playing", song)
 }
 
-func (tp *TapePlayer) Stop(){
-  fmt.Println("Stopped")
+func (tp *TapePlayer) Stop() {
+	fmt.Println("Stopped")
 }
-

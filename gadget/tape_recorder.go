@@ -3,18 +3,17 @@ package gadget
 import "fmt"
 
 type TapeRecorder struct {
-  Microphones int
+	Microphones int
 }
 
 func (tr *TapeRecorder) Record() {
-  fmt.Println("Recording")
+	fmt.Println("Recording")
 }
 
 func (tr *TapeRecorder) Play(song string) {
-  fmt.Println("Playing", song)
+	fmt.Println("Playing", song)
 }
 
-func (tr *TapeRecorder) Stop(){
-  fmt.Println("Stopped")
+func (tr *TapeRecorder) Stop() {
+	fmt.Println("Stopped")
 }
-
