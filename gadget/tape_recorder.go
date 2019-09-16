@@ -6,14 +6,14 @@ type TapeRecorder struct {
 	Microphones int
 }
 
-func (tr TapeRecorder) Record() {
+func (tr *TapeRecorder) Record() {
 	fmt.Println("Recording")
 }
 
-func (tr TapeRecorder) Play(song string) {
+func (tr *TapeRecorder) Play(song string) {
 	fmt.Println("Playing", song)
 }
 
-func (tr TapeRecorder) Stop() {
+func (tr *TapeRecorder) Stop() {
 	fmt.Println("Stopped")
 }

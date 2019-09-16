@@ -6,10 +6,10 @@ type TapePlayer struct {
 	Batteries string
 }
 
-func (tp TapePlayer) Play(song string) {
+func (tp *TapePlayer) Play(song string) {
 	fmt.Println("Playing", song)
 }
 
-func (tp TapePlayer) Stop() {
+func (tp *TapePlayer) Stop() {
 	fmt.Println("Stopped")
 }
